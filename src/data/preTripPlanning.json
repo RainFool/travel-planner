@@ -1,0 +1,105 @@
+{
+  "title": "📋 行程前计划",
+  "sections": [
+    {
+      "id": "documents",
+      "title": "证件准备",
+      "icon": "CheckCircle",
+      "iconColor": "#4ade80",
+      "items": [
+        {
+          "icon": "✅",
+          "text": "有效护照（6个月以上有效期）"
+        },
+        {
+          "icon": "✅",
+          "text": "日本签证（如需要）"
+        },
+        {
+          "icon": "✅",
+          "text": "邮轮登船凭证"
+        },
+        {
+          "icon": "✅",
+          "text": "旅行保险证明"
+        }
+      ]
+    },
+    {
+      "id": "reminders",
+      "title": "重要提醒",
+      "icon": "AlertCircle",
+      "iconColor": "#fbbf24",
+      "items": [
+        {
+          "icon": "⚠️",
+          "text": "提前3小时到达港口办理登船手续"
+        },
+        {
+          "icon": "⚠️",
+          "text": "禁止携带违禁品（刀具、易燃物等）"
+        },
+        {
+          "icon": "⚠️",
+          "text": "准备晕船药和常用药品"
+        },
+        {
+          "icon": "⚠️",
+          "text": "确认邮轮WiFi套餐和通讯方式"
+        }
+      ]
+    },
+    {
+      "id": "bookings",
+      "title": "预订信息",
+      "icon": "Info",
+      "iconColor": "#60a5fa",
+      "items": [
+        {
+          "icon": "📅",
+          "text": "邮轮公司：皇家加勒比国际邮轮"
+        },
+        {
+          "icon": "🚢",
+          "text": "邮轮名称：海洋量子号"
+        },
+        {
+          "icon": "🏠",
+          "text": "舱房类型：海景阳台房"
+        },
+        {
+          "icon": "🍽️",
+          "text": "餐饮套餐：全包式餐饮"
+        }
+      ]
+    },
+    {
+      "id": "itinerary",
+      "title": "行程安排",
+      "icon": "FileText",
+      "iconColor": "#a78bfa",
+      "items": [
+        {
+          "icon": "📝",
+          "text": "Day 1: 上海登船，海上航行"
+        },
+        {
+          "icon": "📝",
+          "text": "Day 2: 海上航行，邮轮活动"
+        },
+        {
+          "icon": "📝",
+          "text": "Day 3: 鹿儿岛岸上观光"
+        },
+        {
+          "icon": "📝",
+          "text": "Day 4: 海上航行，返程"
+        },
+        {
+          "icon": "📝",
+          "text": "Day 5: 上海下船"
+        }
+      ]
+    }
+  ]
+}

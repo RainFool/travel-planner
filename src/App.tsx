@@ -12,7 +12,6 @@ function App() {
     <div className="app">
       <TravelHeader />
       <div className="app-content">
-        <TravelOverview />
         <PreTripPlanning />
         <PackingList />
         <TravelNotes />
