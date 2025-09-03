@@ -1,0 +1,140 @@
+{
+  "title": "🗓️ 详细行程安排",
+  "days": [
+    {
+      "day": "Day 1 - 上海登船日",
+      "title": "🚢 启航之旅",
+      "activities": [
+        {
+          "time": "上午",
+          "description": "在上海吴淞口国际邮轮港集合，办理登船手续"
+        },
+        {
+          "time": "中午",
+          "description": "登船后享用午餐，熟悉邮轮设施"
+        },
+        {
+          "time": "下午",
+          "description": "参加邮轮安全演习，探索邮轮各层甲板"
+        },
+        {
+          "time": "晚上",
+          "description": "参加欢迎晚宴，观看邮轮启航仪式"
+        }
+      ]
+    },
+    {
+      "day": "Day 2 - 海上航行日",
+      "title": "🌊 海上休闲时光",
+      "activities": [
+        {
+          "time": "上午",
+          "description": "甲板上看日出，享用丰盛早餐"
+        },
+        {
+          "time": "中午",
+          "description": "参加邮轮上的各种娱乐活动"
+        },
+        {
+          "time": "下午",
+          "description": "享受邮轮泳池、健身房或SPA服务"
+        },
+        {
+          "time": "晚上",
+          "description": "观看邮轮演出，享受美食"
+        }
+      ]
+    },
+    {
+      "day": "Day 3 - 鹿儿岛岸上观光",
+      "title": "🗾 日本鹿儿岛探索",
+      "activities": [
+        {
+          "time": "上午",
+          "description": "邮轮靠岸，办理入境手续"
+        },
+        {
+          "time": "中午",
+          "description": "参观鹿儿岛城遗址，了解历史"
+        },
+        {
+          "time": "下午",
+          "description": "游览樱岛火山，体验温泉文化"
+        },
+        {
+          "time": "晚上",
+          "description": "品尝当地美食，购买纪念品"
+        }
+      ]
+    },
+    {
+      "day": "Day 4 - 返程航行日",
+      "title": "🏠 归途时光",
+      "activities": [
+        {
+          "time": "上午",
+          "description": "整理行李，享受最后的邮轮时光"
+        },
+        {
+          "time": "中午",
+          "description": "参加邮轮告别活动"
+        },
+        {
+          "time": "下午",
+          "description": "观看海上日落，拍照留念"
+        },
+        {
+          "time": "晚上",
+          "description": "参加告别晚宴，与船员告别"
+        }
+      ]
+    },
+    {
+      "day": "Day 5 - 上海下船日",
+      "title": "👋 旅程结束",
+      "activities": [
+        {
+          "time": "上午",
+          "description": "享用早餐，办理下船手续"
+        },
+        {
+          "time": "中午",
+          "description": "下船，结束愉快的邮轮之旅"
+        },
+        {
+          "time": "下午",
+          "description": "返回温暖的家"
+        }
+      ]
+    }
+  ],
+  "attractions": {
+    "title": "📍 鹿儿岛必游景点推荐",
+    "list": [
+      {
+        "name": "🏯 鹿儿岛城遗址",
+        "description": "了解鹿儿岛的历史文化，欣赏城市全景",
+        "duration": "1-2小时",
+        "cost": "免费"
+      },
+      {
+        "name": "🌋 樱岛火山",
+        "description": "近距离观看活火山，体验大自然的震撼",
+        "duration": "2-3小时",
+        "cost": "免费"
+      },
+      {
+        "name": "♨️ 指宿温泉",
+        "description": "体验日本传统温泉文化，放松身心",
+        "duration": "2-3小时",
+        "cost": "¥1000-2000/人"
+      },
+      {
+        "name": "🛍️ 天文馆通商店街",
+        "description": "购买当地特产和纪念品，体验购物乐趣",
+        "duration": "1-2小时",
+        "cost": "根据购买物品而定"
+      }
+    ]
+  }
+}

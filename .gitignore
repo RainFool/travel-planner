@@ -3,10 +3,14 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Build outputs
 dist/
 build/
+out/
+*.local
 
 # Environment variables
 .env
@@ -20,6 +24,7 @@ build/
 .idea/
 *.swp
 *.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -42,6 +47,7 @@ pids
 
 # Coverage directory used by tools like istanbul
 coverage/
+*.lcov
 
 # nyc test coverage
 .nyc_output
@@ -82,3 +88,38 @@ jspm_packages/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Vite specific
+.vite/
+.vite-ssg-temp/
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Storybook build outputs
+storybook-static
+
+# Temporary folders
+tmp/
+temp/
+
+# Local development
+.local/
+
+# Editor directories and files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
