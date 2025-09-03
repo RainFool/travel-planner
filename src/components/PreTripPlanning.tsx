@@ -1,41 +1,63 @@
 import React from 'react';
 import { CheckCircle, AlertCircle, Info, FileText } from 'lucide-react';
+import preTripData from '../data/preTripPlanning.json';
+
+// 类型定义
+interface PreTripItem {
+  icon: string;
+  text: string;
+}
+
+interface PreTripSection {
+  id: string;
+  title: string;
+  icon: string;
+  iconColor: string;
+  items: PreTripItem[];
+}
+
+interface PreTripData {
+  title: string;
+  sections: PreTripSection[];
+}
 
 const PreTripPlanning: React.FC = () => {
+  // 图标映射
+  const iconMap = {
+    CheckCircle: CheckCircle,
+    AlertCircle: AlertCircle,
+    Info: Info,
+    FileText: FileText
+  };
+
+  const data = preTripData as PreTripData;
+
   return (
     <div className="section">
-      <h2>📋 行程前计划</h2>
+      <h2>{data.title}</h2>
       <div className="compact-card">
-        <div className="planning-item">
-          <div className="item-header">
-            <CheckCircle size={20} style={{ color: '#4ade80' }} />
-            <h4>证件准备</h4>
-          </div>
-          <div className="item-content">
-            <span>✅ 有效护照（6个月以上有效期）</span>
-            <span>✅ 日本签证（如需要）</span>
-            <span>✅ 邮轮登船凭证</span>
-            <span>✅ 旅行保险证明</span>
-          </div>
-        </div>
-        
-        <div className="planning-item">
-          <div className="item-header">
-            <AlertCircle size={20} style={{ color: '#fbbf24' }} />
-            <h4>重要提醒</h4>
-          </div>
-          <div className="item-content">
-            <span>⚠️ 提前3小时到达港口办理登船手续</span>
-            <span>⚠️ 禁止携带违禁品（刀具、易燃物等）</span>
-            <span>⚠️ 准备晕船药和常用药品</span>
-            <span>⚠️ 确认邮轮WiFi套餐和通讯方式</span>
-          </div>
-        </div>
-        
+        {data.sections.map((section: PreTripSection) => {
+          const IconComponent = iconMap[section.icon as keyof typeof iconMap];
+          
+          return (
+            <div key={section.id} className="planning-item">
+              <div className="item-header">
+                <IconComponent size={20} style={{ color: section.iconColor }} />
+                <h4>{section.title}</h4>
+              </div>
+              <div className="item-content">
+                {section.items.map((item: PreTripItem, index: number) => (
+                  <span key={index}>{item.icon} {item.text}</span>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
 };
 
 export default PreTripPlanning;
+
 
