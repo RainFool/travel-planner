@@ -1,0 +1,133 @@
+{
+  "title": "🧳 行李清单",
+  "sections": [
+    {
+      "id": "clothing",
+      "title": "👕 衣物类",
+      "icon": "Shirt",
+      "iconColor": "#fbbf24",
+      "items": [
+        {
+          "icon": "👔",
+          "text": "正装（邮轮晚宴用）"
+        },
+        {
+          "icon": "👕",
+          "text": "休闲装（日常穿着）"
+        },
+        {
+          "icon": "👖",
+          "text": "牛仔裤/休闲裤"
+        },
+        {
+          "icon": "👗",
+          "text": "泳装（邮轮泳池用）"
+        },
+        {
+          "icon": "🧥",
+          "text": "外套（海上可能较凉）"
+        },
+        {
+          "icon": "👟",
+          "text": "舒适鞋子（步行用）"
+        }
+      ]
+    },
+    {
+      "id": "daily-essentials",
+      "title": "🛍️ 日用品",
+      "icon": "Luggage",
+      "iconColor": "#60a5fa",
+      "items": [
+        {
+          "icon": "🧴",
+          "text": "洗漱用品（牙刷、牙膏、洗面奶）"
+        },
+        {
+          "icon": "🧴",
+          "text": "护肤品（防晒霜、保湿霜）"
+        },
+        {
+          "icon": "💊",
+          "text": "常用药品（感冒药、胃药）"
+        },
+        {
+          "icon": "💊",
+          "text": "晕船药（重要！）"
+        },
+        {
+          "icon": "🔌",
+          "text": "充电器和转换插头"
+        },
+        {
+          "icon": "📱",
+          "text": "手机和相机"
+        }
+      ]
+    },
+    {
+      "id": "electronics",
+      "title": "📸 电子设备",
+      "icon": "Camera",
+      "iconColor": "#a78bfa",
+      "items": [
+        {
+          "icon": "📱",
+          "text": "智能手机"
+        },
+        {
+          "icon": "📷",
+          "text": "相机/GoPro"
+        },
+        {
+          "icon": "🔋",
+          "text": "充电宝"
+        },
+        {
+          "icon": "🎧",
+          "text": "耳机"
+        },
+        {
+          "icon": "💻",
+          "text": "平板电脑（可选）"
+        },
+        {
+          "icon": "🔌",
+          "text": "各种充电线"
+        }
+      ]
+    },
+    {
+      "id": "special-items",
+      "title": "💝 特殊物品",
+      "icon": "Heart",
+      "iconColor": "#f87171",
+      "items": [
+        {
+          "icon": "📚",
+          "text": "书籍/杂志（海上时光）"
+        },
+        {
+          "icon": "🎮",
+          "text": "便携游戏设备"
+        },
+        {
+          "icon": "🧘",
+          "text": "瑜伽垫（邮轮健身用）"
+        },
+        {
+          "icon": "🎵",
+          "text": "音乐播放器"
+        },
+        {
+          "icon": "📝",
+          "text": "旅行日记本"
+        },
+        {
+          "icon": "🎁",
+          "text": "小礼物（送给船员）"
+        }
+      ]
+    }
+  ]
+}
