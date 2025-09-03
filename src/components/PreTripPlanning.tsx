@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CheckCircle, AlertCircle, Info, FileText, X } from 'lucide-react';
+import { CheckCircle, AlertCircle, Info, FileText, X, Shield } from 'lucide-react';
 import preTripData from '../data/preTripPlanning.json';
 import prohibitedItemsData from '../data/prohibitedItems.json';
 import medicationsData from '../data/medications.json';
@@ -72,7 +72,8 @@ const PreTripPlanning: React.FC = () => {
     CheckCircle: CheckCircle,
     AlertCircle: AlertCircle,
     Info: Info,
-    FileText: FileText
+    FileText: FileText,
+    Shield: Shield
   };
 
   const data = preTripData as PreTripData;
