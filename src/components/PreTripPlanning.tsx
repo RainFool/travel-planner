@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { CheckCircle, AlertCircle, Info, FileText, X } from 'lucide-react';
 import preTripData from '../data/preTripPlanning.json';
 import prohibitedItemsData from '../data/prohibitedItems.json';
+import medicationsData from '../data/medications.json';
 
 // 类型定义
 interface PreTripItem {
@@ -42,8 +43,29 @@ interface ProhibitedData {
   sections: ProhibitedSection[];
 }
 
+interface MedicationItem {
+  icon: string;
+  text: string;
+}
+
+interface MedicationSection {
+  id: string;
+  title: string;
+  icon: string;
+  iconColor: string;
+  items: MedicationItem[];
+}
+
+interface MedicationData {
+  title: string;
+  description: string;
+  imageUrl?: string;
+  sections: MedicationSection[];
+}
+
 const PreTripPlanning: React.FC = () => {
   const [showProhibitedModal, setShowProhibitedModal] = useState(false);
+  const [showMedicationsModal, setShowMedicationsModal] = useState(false);
   
   // 图标映射
   const iconMap = {
@@ -55,10 +77,13 @@ const PreTripPlanning: React.FC = () => {
 
   const data = preTripData as PreTripData;
   const prohibitedData = prohibitedItemsData as ProhibitedData;
+  const medicationsDataObj = medicationsData as MedicationData;
 
   const handleItemClick = (item: PreTripItem) => {
     if (item.link === 'prohibited-items') {
       setShowProhibitedModal(true);
+    } else if (item.link === 'medications') {
+      setShowMedicationsModal(true);
     }
   };
 
@@ -111,6 +136,48 @@ const PreTripPlanning: React.FC = () => {
                   <h4>{section.title}</h4>
                   <div className="prohibited-items">
                     {section.items.map((item: ProhibitedItem, index: number) => (
+                      <div key={index} className="prohibited-item">
+                        <span className="item-icon">{item.icon}</span>
+                        <span className="item-text">{item.text}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 常用药品模态框 */}
+      {showMedicationsModal && (
+        <div className="modal-overlay" onClick={() => setShowMedicationsModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h3>{medicationsDataObj.title}</h3>
+              <button 
+                className="modal-close"
+                onClick={() => setShowMedicationsModal(false)}
+              >
+                <X size={24} />
+              </button>
+            </div>
+            <div className="modal-body">
+              <p className="modal-description">{medicationsDataObj.description}</p>
+              {medicationsDataObj.imageUrl && (
+                <div className="medication-image-container">
+                  <img 
+                    src={medicationsDataObj.imageUrl} 
+                    alt="药品指南图片" 
+                    className="medication-guide-image"
+                  />
+                </div>
+              )}
+              {medicationsDataObj.sections.map((section: MedicationSection) => (
+                <div key={section.id} className="prohibited-section">
+                  <h4>{section.title}</h4>
+                  <div className="prohibited-items">
+                    {section.items.map((item: MedicationItem, index: number) => (
                       <div key={index} className="prohibited-item">
                         <span className="item-icon">{item.icon}</span>
                         <span className="item-text">{item.text}</span>
