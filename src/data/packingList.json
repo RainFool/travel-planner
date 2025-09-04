@@ -193,7 +193,7 @@
         },
         {
           "icon": "🤧",
-          "text": "抗过敏药",
+          "text": "布洛芬（退烧药）",
           "priority": "medium"
         }
       ]
@@ -265,6 +265,11 @@
         {
           "icon": "📎",
           "text": "小夹子（夹零食袋、夹毛巾防风吹）",
+          "priority": "low"
+        },
+        {
+          "icon": "📱",
+          "text": "自拍杆",
           "priority": "low"
         }
       ]
